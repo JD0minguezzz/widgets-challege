@@ -4,7 +4,7 @@ body {
 
 .widget-3 {
 	height: 320px;
-	width: 250px; 
+	width: 250px;
     background-color: #444f51;
     position: absolute;
     border-radius: 5px;
@@ -27,38 +27,56 @@ body {
 	background-color: #dd7500
 }
 
-.widget-title h1 {
+.widget-title h2 {
 	font-size: 16px;
 	font-weight: normal;
 }
 
 .btn-list {
+	display: flex;
+	flex-flow: column wrap;	
 	justify-content: center;
+	font-size: 14px;
+	font-weight: lighter;
 }
 
-i {
+.btn-list .btnbox {
+	height: 5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 15px;
+
+}
+
+.btn-list .btnbox i {
 	margin-right: 15px;
 }
 
-.btn-list button {
-	font-family: 'Ubuntu', sans-serif;
-	text-align: left;
-	background-color: #444f51;
-	border-style: none;
-	border-top: 1px #363e40 solid;
-	border-bottom: 1px #363e40 solid;
-	color: #ffffff; 
-	padding: 15px;
-	cursor: pointer; 
-	width: 100%;
-	display: block; 
+.btn-list .btnbox a {
+	align-self: center;
+	color: #ffffff;
+	text-decoration: none;
 }
 
-.btn-list button:not(:last-child) {
-	border-bottom: none;
+.btn-list .btnbox h4 {
+	font-size: 14px;
+	font-weight: lighter; 
+	margin: 0px;
+	padding: 4px;
+	width: 30px;
+	background: #bdbec0;
+	border-radius: 15px;
+	text-align: center;
 }
 
-.btn-list button:hover {
+.btnbox:hover, .btnbox a:hover {
+	color: #363e40;
 	background-color: #bdbec0;
-	color: #444f51;
+	cursor: pointer;
+}
+
+.btn-list .btnbox h4:hover {
+	color: #ffffff;
+	background-color: #a03033;
 }

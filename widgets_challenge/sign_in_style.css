@@ -15,7 +15,7 @@ body {
     margin: auto
 }
 
-h2 {
+.widget-2 h2 {
 	font-size: 14px;
 	letter-spacing: 0.5px;
 	color: #ffffff;
@@ -137,11 +137,11 @@ h2 {
 }
 
 .fb-login-btn .fa-facebook-f { 
-  position: absolute;
-  top: 12px;
-  left: 35px;
-  /*border-radius: 50%;
-  border: 2px #ffffff solid;*/ 
+  	position: absolute;
+  	top: 12px;
+  	left: 35px;
+  	/*border-radius: 50%;
+  	border: 2px #ffffff solid;*/ 
 }
 
 .fb-login-btn button {
@@ -157,4 +157,5 @@ h2 {
 
 .fb-login-btn:hover {
 	background-color: #1a4e95;
+	cursor: pointer;
 }

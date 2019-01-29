@@ -2,32 +2,24 @@ body {
   	font-family: 'Ubuntu', sans-serif;
 }
 
-i {
-	margin-right: 10px;
-}
-
-.fa-caret-down {
-	margin-left: 10px;
-}
-
-.left-buttons {
-	float: right;
-}
-
-img {
-	width: 30px;
-	height: auto;
-	margin: 15px 15px;
-	border: 2px #dd7500 solid;
-	border-radius: 50%
-}
-
 .widget-1 {
 	position: relative;
 	width: 800px;
   	overflow: hidden;
   	background-color: #444f51;
   	border-radius: 5px;
+}
+
+.widget-1 i {
+	margin-right: 10px;
+}
+
+.widget-1 img {
+	width: 30px;
+	height: auto;
+	margin: 15px 15px;
+	border: 2px #dd7500 solid;
+	border-radius: 50%
 }
 
 .widget-1 a {
@@ -40,9 +32,27 @@ img {
 	cursor: pointer;
 }
 
+.widget-1 a:hover {
+	color: #444f51;
+	background-color: #bdbec0;
+	border-bottom: 3px #dd7500 solid;
+}
+
+.fa-caret-down {
+	margin-left: 10px;
+}
+
+.left-buttons {
+	float: right;
+}
+
 .dropdown {
-  	float: left;
+  	float: right;
   	overflow: hidden;
+}
+
+.dropbtn i {
+	margin-right: 5px;
 }
 
 .dropdown .dropbtn { 
@@ -54,12 +64,6 @@ img {
   font-size: inherit;
 }
 
-.widget-1 a:hover {
-	color: #444f51;
-	background-color: #bdbec0;
-	border-bottom: 3px #dd7500 solid;
-}
-
 .dropbtn:hover {
 	color: #444f51;
 	background-color: #bdbec0;
@@ -67,8 +71,7 @@ img {
 }
 
 .dropdown-content {
-	float: right;
-	
+	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
@@ -88,6 +91,7 @@ img {
 .dropdown-content a:hover {
 	color: #444f51;
 	background-color: #bdbec0;
+	border-style: none;
 	border-bottom: 3px #dd7500 solid;
 }
 
